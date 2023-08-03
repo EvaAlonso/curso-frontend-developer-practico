@@ -29,6 +29,7 @@ function toggleMobileMenu(){
   if(!isAsideClosed){
     aside.classList.add('inactive');
   }
+  closeDetails();
   mobileMenu.classList.toggle('inactive');
 };
 
@@ -38,13 +39,13 @@ function toggleCarritoAside(){
   if(!ismobileMenuClosed){
     mobileMenu.classList.add('inactive');
   }
-
+  closeDetails();
   aside.classList.toggle('inactive');
 }
 function toggleProductDetail(){
-  const isAsideClosed = asideDetails.classList.contains('inactive');
+  const isAsideDetailsClosed = asideDetails.classList.contains('inactive');
  
-  if(!isAsideClosed){
+  if(!isAsideDetailsClosed){
     asideDetails.classList.add('inactive');
   }
 
